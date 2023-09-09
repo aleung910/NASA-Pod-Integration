@@ -17,12 +17,15 @@
 
 // LDg88wecrHOgDFaRPqi7r62mBDQH5vtqbGtfVgh7
 
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('.hit').addEventListener('click', getFetch)
 
 function getFetch(){
   const choice = document.querySelector('input').value
   console.log(choice)
   const url = `https://api.nasa.gov/planetary/apod?api_key=LDg88wecrHOgDFaRPqi7r62mBDQH5vtqbGtfVgh7&date=${choice}`
+
+  document.querySelector('img').src = '';
+  document.querySelector('iframe').src = '';
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -37,7 +40,7 @@ function getFetch(){
         else if (data.media_type ==='video'){
           document.querySelector('iframe').src = data.url
         }
-        document.querySelector('h2').innerHTML=data.title
+        document.querySelector('h3').innerHTML=data.title
         document.querySelector('p').innerText=data.explanation
       })
       .catch(err => {
