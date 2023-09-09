@@ -10,8 +10,7 @@
   /******************************************
   /* LAYOUT
   /*******************************************/
-  
-  
+
   @font-face {
     font-family: 'virgo_01regular';
     src: url('virgo-webfont.eot');
@@ -31,43 +30,93 @@
   }
   
   
-  img{
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    height: 50%;
-  }
-  
-  /* h1,h2,h3{
-    text-align: center;
-    color:white;
-  } */
+
   
   h3{
     margin: 0 0 10% 0;
   }
   
-  .center{
-    text-align: center;
-  }
-  
+main{
+  display: flex;
+  color: #111;
+}
+
   body{
     /* background-image: url('../img/background-technology-desktop.jpg'); */
-    /* font-family: 'virgo_01regular',; */
-    /* background-color: black; */
-    /* font-family: 'Strait', sans-serif; */
-    /* background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% ); */
+    font-family: 'virgo_01regular';
+    COLOR:BLACK;
+    overflow: hidden;
+    /* background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgb(82, 89, 218) 84.8% ); */
+    background-color: #eeeeee;
   }
   
+  H1{
+    font-size: 5REM;
+  }
+
+
+  .img {
+    position: relative;
+    z-index: 1;
+    display: inline;
+
+}
+
+#generatedImage {
+    position: absolute;
+    top: -20px; /* Adjust this value to control how far behind the description section the image should be */
+    z-index: -1;
+}
+
+  .container{
+    display:flex;
+    height:auto;
+    justify-content:center;
+    margin-top: 2REM;
+  }
+
+  .card-container{
+    display:flex;
+    height:auto;
+    justify-content:center;
+    text-align: center;
+  }
+
+
+  .card{
+    width: 90%;
+    max-width: 900PX;
+    padding:4rem;
+    border-radius: 1REM;
+    border:1PX SOLID transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);  
+   
+
+    border-top-color: rgba(255,255,255, 0.5);
+    border-left-color: rgba(255,255,255, 0.5);
+    border-bottom-color: rgba(255,255,255, 0.1);
+    border-right-color: rgba(255,255,255, 0.1);
+    COLOR:BLACK;
+  }
+
+  .cb1{
+    background-color: rgba(255,255,255, 0.1);
+    /* font-family: 'virgo_01regular',; */
+  }
+
+
   /* Date input styling */
   input[type="date"]{
-    width:  250px;
-    HEIGHT:50PX;
+
+
     border: 0;
-  background-color: #111; 
-   outline:none;
+    border-radius: 30px;
+
+    background-color: #111; 
+    outline:none;
     font-size: 30PX;
-    
     color:white;
     display: inline-block;
     border-radius: 30px;
@@ -78,6 +127,9 @@
     letter-spacing: 2px;
     position: relative;
     cursor: pointer;
+
+
+    margin-bottom: 3rem;
   }
   
   input[type="date"]:hover{
@@ -106,6 +158,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
   }
   
   .space-button span {
@@ -139,4 +192,6 @@
     color: #fff;
     transform: translateY(-1px);
   }
-  
+
+
+
