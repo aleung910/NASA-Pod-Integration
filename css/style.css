@@ -54,21 +54,12 @@ main{
     font-size: 5REM;
   }
 
-  /* .generatedimg{
-  margin: 2rem;
-  max-width: fit-content;
-  max-height: fit-content;
-  width: 90%;
-  height: 80%; 
-  object-fit: cover; 
-} */
-
 .generatedimg {
-  margin: 2rem;
+  margin: 4rem;
   max-width: fit-content;
   max-height: fit-content;
-  width: 800px; /* Set the desired width */
-  height: 800px; /* Set the desired height */
+  width: 900px; /* Set the desired width */
+  height: 900px; /* Set the desired height */
   object-fit: cover; 
 }
 
@@ -79,7 +70,6 @@ iframe{
   margin: 0;
 }
 
-
 .LEFT{
   margin-right: 1rem
 }
@@ -89,7 +79,9 @@ iframe{
     height:auto;
     justify-content:center;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    margin-left: -8rem;
   }
 
   .card{
@@ -109,25 +101,25 @@ iframe{
     
     line-height: 1;
     font-size: 1rem;
-    
-    margin-right: 20px;
+  
+    /* margin-right: 20px; */
   }
 
  .card-text{
-  max-height: fit-content;
-  font-size: smaller;
+  /* max-height: fit-content; */
+  /* font-size: smaller; */
  }
 
   
   .cb1{
-    background-color: rgba(255,255,255, .1);
+    /* background-color: rgba(255,255,255, .1); */
+    background: linear-gradient(to right bottom, rgba(225,255,255,.5), rgba(225,225,225,0.3));
     font-family: 'virgo_01regular',;
   }
 
 
   /* Date input styling */
   input[type="date"]{
-
 
     border: 0;
     border-radius: 30px;
