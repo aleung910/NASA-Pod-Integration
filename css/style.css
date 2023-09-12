@@ -54,10 +54,21 @@ main{
     font-size: 5REM;
   }
 
-  .generatedimg{
-  margin: 2rem 0;
-  width: 90%; /* Set the desired width */
-  height: auto; /* Set the desired height */
+  /* .generatedimg{
+  margin: 2rem;
+  max-width: fit-content;
+  max-height: fit-content;
+  width: 90%;
+  height: 80%; 
+  object-fit: cover; 
+} */
+
+.generatedimg {
+  margin: 2rem;
+  max-width: fit-content;
+  max-height: fit-content;
+  width: 800px; /* Set the desired width */
+  height: 800px; /* Set the desired height */
   object-fit: cover; 
 }
 
@@ -83,7 +94,7 @@ iframe{
 
   .card{
     width: 100%;
-    max-width: 300PX;
+    max-width: 1000PX;
     padding: 0rem 4rem;
     border-radius: 1REM;
     border:1PX SOLID transparent;
@@ -98,14 +109,16 @@ iframe{
     
     line-height: 1;
     font-size: 1rem;
-
+    
     margin-right: 20px;
   }
 
+ .card-text{
+  max-height: fit-content;
+  font-size: smaller;
+ }
 
-  .card p{
-    font-size: smaller;
-  }
+  
   .cb1{
     background-color: rgba(255,255,255, .1);
     font-family: 'virgo_01regular',;
