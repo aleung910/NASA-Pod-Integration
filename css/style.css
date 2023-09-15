@@ -54,7 +54,12 @@ main{
     font-size: 5REM;
   }
 
+.img{
+  display: none;
+}
+
 .generatedimg {
+  display: none; 
   margin: 4rem;
   max-width: fit-content;
   max-height: fit-content;
@@ -65,9 +70,9 @@ main{
 
 
 iframe{
-  WIDTH:70%;
-  HEIGHT:50%;
-  margin: 0;
+  margin: 4rem;
+  width: 900px; /* Set the desired width */
+  height: 500px; /* Set the desired height */
 }
 
 .LEFT{
@@ -102,15 +107,8 @@ iframe{
     line-height: 1;
     font-size: 1rem;
   
-    /* margin-right: 20px; */
   }
 
- .card-text{
-  /* max-height: fit-content; */
-  /* font-size: smaller; */
- }
-
-  
   .cb1{
     /* background-color: rgba(255,255,255, .1); */
     background: linear-gradient(to right bottom, rgba(225,255,255,.5), rgba(225,225,225,0.3));
@@ -206,3 +204,4 @@ iframe{
   .cosmos {
     margin-top: 3rem;
   }
+

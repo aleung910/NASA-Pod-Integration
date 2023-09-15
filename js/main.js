@@ -31,17 +31,21 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
-        if (data.media_type ==='image'){
-
-        // document.getElementById('.img').style.backgroundImage = `url('${data.hdurl}')`
-
-        document.querySelector('img').src = data.hdurl
+        if (data.media_type === 'image'){
+          document.querySelector('img').style.display = 'block'; // Show img element
+          document.querySelector('iframe').style.display = 'none'; // Hide iframe element
+          document.querySelector('img').src = data.hdurl
         }
-        else if (data.media_type ==='video'){
+        else if (data.media_type === 'video'){
+          document.querySelector('img').style.display = 'none'; // Hide img element
+          document.querySelector('iframe').style.display = 'block'; // Show iframe element
           document.querySelector('iframe').src = data.url
         }
-        document.querySelector('h3').innerHTML=data.title
-        document.querySelector('p').innerText=data.explanation
+
+        document.querySelector('.img').style.display = 'block';
+
+        document.querySelector('h3').innerHTML = data.title
+        document.querySelector('p').innerText = data.explanation
       })
       .catch(err => {
           console.log(`error ${err}`)
